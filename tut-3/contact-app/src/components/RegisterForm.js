@@ -29,7 +29,7 @@ class RegisterForm extends React.Component{
         if(this.state.RegisterFormState===true){
             return(
                 <>
-                <div className='container align-items-center mt-5 text-light register-form' style={divStyle}>
+                <div className='container align-items-center mt-5  register-form' style={divStyle}>
                 <h2 className="text-center">Registration Form</h2>
                 <form>
                     <div className="form-group row justify-content-center">

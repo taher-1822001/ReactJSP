@@ -1,11 +1,25 @@
+:root{
+  --body_background:white;
+  --body_color:black;
+  --link_color:navy;
+}
+
+[data-theme="dark"] {
+  --body_background: #282c34;
+  --body_color:white;
+  --link_color:cyan;
+}
+
 *{
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
 }
 body, html {
     height: 100%;
-    background: linear-gradient(to bottom, #e9e9e9, #ffffff, 45deg);
     /* Add vendor prefixes for wider browser support */
+    background-color: var(--body_background);
     margin: 0;
+    transition: all 0.3s ease-in-out;
     padding: 0;
   }
   

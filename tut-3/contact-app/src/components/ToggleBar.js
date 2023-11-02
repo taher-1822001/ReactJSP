@@ -1,43 +1,43 @@
-import React from "react";
+import React from 'react';
 
+class ToggleBar extends React.Component {
+  constructor(props) {
+    super(props);
 
-class ToggleBar extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            viewModeStatus:"",
-            backgroundTheme:"bg-dark"
-        };
-    }
+    this.state = {
+      isDarkTheme: false,
+    };
+  }
 
-    viewModeFunction = () =>{
+  toggleTheme = () => {
+    this.setState((prevState) => ({
+      isDarkTheme: !prevState.isDarkTheme,
+    }));
+
+    if (this.state.isDarkTheme) {
+        document.body.style.backgroundColor = 'white';
+        document.body.style.color = 'black';
         
-    }
+      } else {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'white';
+      }
+  };
 
-    backgroundThemeFunction = (backgroundTheme) =>{
-        if(backgroundTheme==="bg-dark")
-        {
-            this.setState({backgroundTheme:"bg-light"})
-        }
-        else{
-            this.setState({backgroundTheme:"bg-dark"})
-        }
-    }
-
-    render(){
-        return(
-            <>
-            <div className={`container-fluid ${this.state.backgroundTheme} bg-gradient align-items-end`}>
-                <div className="row justify-content-end">
-                    <div className="col-2 p-1">
-                        <button className={"btn btn-primary m-0"} onClick={this.backgroundThemeFunction(this.state.backgroundTheme)}>dark Mode</button>
-                    </div>
-                </div>
+  render() {
+    return (
+      <div className="toggle-bar container-fluid bg-gradient bg-primary">
+        <div className='row justify-content-end'>
+            <div className='col-2'>
+            <button onClick={this.toggleTheme} className='btn btn-secondary mt-2 mb-2'>
+          dark mode
+        </button>
             </div>
-            </>
-        )
-    }
-    
+        </div>
+        
+      </div>
+    );
+  }
 }
 
 export default ToggleBar;

@@ -2,3 +2,14 @@
 .register-form::-webkit-scrollbar{
   display: none;
 }
+/* .app {
+  background-color: #ffffff;
+  color: #333;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.app.dark {
+  background-color: #333;
+  color: #ffffff;
+} */

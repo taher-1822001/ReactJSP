@@ -7,7 +7,7 @@ class Footer extends React.Component{
         return(
            
             <>
-<footer className="bg-dark bg-gradient text-center text-light" style={{position:"absolute", left:"0", bottom:"0", right: "0"}}>
+<footer className="bg-primary bg-gradient text-center text-light" style={{position:"absolute", left:"0", bottom:"0", right: "0"}}>
 
   <div className="container p-3 pb-0">
  
@@ -26,8 +26,8 @@ class Footer extends React.Component{
       ></a>
     
 
-      <a class="btn btn-outline-light btn-floating m-1" href="taher1822001@gmail.com" role="button" target="_blank"
-        ><i class="fab fa-google"></i
+      <a className="btn btn-outline-light btn-floating m-1" href="taher1822001@gmail.com" role="button" target="_blank"
+        ><i className="fab fa-google"></i
       ></a>
 
       

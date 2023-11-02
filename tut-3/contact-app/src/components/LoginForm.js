@@ -50,7 +50,7 @@ class LoginForm extends React.Component
         {
             return(
                 <>
-            <div className='container align-items-center mt-5 login text-dark'>
+            <div className='container align-items-center mt-5 login'>
             <h2 className="text-center">{this.state.title}</h2>
           
                 <form>
@@ -103,7 +103,7 @@ class LoginForm extends React.Component
             </form>
            { this.state.newUserState ===true && 
              <center>
-             <small id="Register" className="form-text text-dark" >New user? <span className='text-primary text-bold pe-auto text-decoration-underline' onClick={this.newUserStateFunction} style={{cursor:"pointer"}}>Click Here</span> to register</small>
+             <small id="Register" className="form-text " >New user? <span className='text-primary text-bold pe-auto text-decoration-underline' onClick={this.newUserStateFunction} style={{cursor:"pointer"}}>Click Here</span> to register</small>
              </center>
            }
             </div>
