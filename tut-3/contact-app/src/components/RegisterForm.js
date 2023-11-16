@@ -21,9 +21,11 @@ class RegisterForm extends React.Component{
     }
     render()
     {
+        const deviceHeight = window.innerHeight;
+        const deviceWidth = window.deviceWidth;
         const divStyle = {
             overflowY: 'scroll',
-            maxHeight: '400px', // Set a fixed height for the scrollable container
+            maxHeight: deviceHeight > 680 ? '700px' : '382px', // Set maxHeight based on the condition
             position: 'relative',
         };
         if(this.state.RegisterFormState===true){

@@ -7,28 +7,27 @@ class Footer extends React.Component{
         return(
            
             <>
-<footer className="bg-primary bg-gradient text-center text-light" style={{position:"absolute", left:"0", bottom:"0", right: "0"}}>
+<footer className=" text-center text-light bg-secondary bg-opacity-50 bg-gradient" style={{position:"absolute", left:"0", bottom:"0", right: "0"}}>
 
-  <div className="container p-3 pb-0">
+  <div className="container p-2 pb-0">
  
-    <section className="mb-3">
-      <a className="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/taher1822001" role="button" target="_blank"
-        ><i className="fab fa-linkedin-in"></i
-      ></a>
-      <a className="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/taher1822001" role="button" target="_blank"
-        ><i className="fab fa-instagram"></i
-      ></a>
-      <a className="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/taher1822001" role="button"
-        ><i className="fab fa-facebook-f"></i
-      ></a>
-      <a className="btn btn-outline-light btn-floating m-1" href="https://github.com/taher-1822001" role="button" target="_blank"
-        ><i className="fab fa-github"></i
-      ></a>
+    <section className="mb-2">
+      <a className="btn btn-outline-light btn-floating m-1 p-1" href="https://www.linkedin.com/in/taher1822001" role="button" target="_blank"
+        ><img src={`${process.env.PUBLIC_URL}/images/logos/linkedin.png`} className='img-fluid m-0 p-0' style={{width:"35px"}} /></a>
+        
+      <a className="btn btn-outline-light btn-floating m-1 p-1" href="https://www.instagram.com/taher1822001" role="button" target="_blank"
+        ><img src={`${process.env.PUBLIC_URL}/images/logos/instagram.png`} className='img-fluid m-0 p-0' style={{width:"35px"}} /></a>
+
+      <a className="btn btn-outline-light btn-floating m-1 p-1" href="https://www.facebook.com/taher1822001" role="button"
+        ><img src={`${process.env.PUBLIC_URL}/images/logos/facebook.png`} className='img-fluid m-0 p-0' style={{width:"35px"}} /></a>
+
+
+      <a className="btn btn-outline-light btn-floating m-1 p-1" href="https://github.com/taher-1822001" role="button" target="_blank"
+        ><img src={`${process.env.PUBLIC_URL}/images/logos/github.png`} className='img-fluid m-0 p-0' style={{width:"35px"}} /></a>
     
 
-      <a className="btn btn-outline-light btn-floating m-1" href="taher1822001@gmail.com" role="button" target="_blank"
-        ><i className="fab fa-google"></i
-      ></a>
+      <a className="btn btn-outline-light btn-floating m-1 p-1" href="taher1822001@gmail.com" role="button" target="_blank"
+        ><img src={`${process.env.PUBLIC_URL}/images/logos/google.png`} className='img-fluid m-0 p-0' style={{width:"35px"}} /></a>
 
       
 

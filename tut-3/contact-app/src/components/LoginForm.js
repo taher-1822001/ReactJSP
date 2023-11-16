@@ -1,5 +1,6 @@
 import React from 'react'
 import RegisterForm from './RegisterForm'
+import './App.css'
 class LoginForm extends React.Component
 {
     constructor(props)
@@ -58,7 +59,7 @@ class LoginForm extends React.Component
                     <div className='col-md-4 '>
                     <hr className='mt-2 mb-2'/>
                     <label for="Email">Email<span className='text-danger'>*</span></label>
-                    <input type="email" className="form-control border-2" id="Email" aria-describedby="emailHelp" placeholder="Enter Email"/>
+                    <input type="email" className="form-control border-2" id="Email" aria-describedby="emailHelp" placeholder="Enter Email" />
                     
                     </div>
                 </div>

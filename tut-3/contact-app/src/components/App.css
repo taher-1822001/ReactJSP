@@ -13,3 +13,9 @@
   background-color: #333;
   color: #ffffff;
 } */
+input{
+  background:none !important;
+}
+img{
+  transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+}

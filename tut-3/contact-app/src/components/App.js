@@ -6,7 +6,7 @@ import LoginForm from './LoginForm';
 import Footer from './Footer';
 // import RegisterForm from './RegisterForm'
 // import PopupNotification from './PopupNotification';
-import ToggleBar from './ToggleBar';
+import ToggleBar from './ToggleBar/ToggleBar';
 
 class App extends React.Component {
   constructor(props) {
@@ -52,6 +52,7 @@ class App extends React.Component {
       {/* < PopupNotification /> */}
     
       <Footer />
+
     </div>
   );
 }
